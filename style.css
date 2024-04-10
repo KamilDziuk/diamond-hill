@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background: #232323;
+  background: #111111;
 }
 
 *:target,
@@ -145,7 +145,7 @@ body {
 }
 
 .slidep {
-  background: rgb(255, 255, 255);
+  background:#ffff;
   flex: 5;
   overflow: hidden;
 }
@@ -161,8 +161,8 @@ body {
 .slide {
   height: 100%;
   display: flex;
-  background: #c2c0c0;
-  background: hsl(calc(360deg * (var(--i) / var(--total))), 60%, 60%);
+  background: #ffffff;
+ 
 }
 
 .slider {
@@ -172,7 +172,7 @@ body {
 
 
 .slide-nav a:hover {
-  color: #c2c0c0;
+  color: #ffffff;
 }
 
 .slide img {
@@ -199,12 +199,14 @@ body {
 
 .nav_headar {
 
-  background-color: #ffffff32;
+  background-color: #00000032;
+
   backdrop-filter: blur(15px) !important;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -215,7 +217,7 @@ body {
 
 
 .nav_headar.sticky {
-  background-color: #26262632;
+  background-color: #00000032;
   backdrop-filter: blur(15px);
   padding: 0px 0px;
 }
@@ -247,6 +249,21 @@ a {
 
 }
 
+.learnAboutInvestmentsButton
+{
+
+  color:#ffff!important;
+  border:2px solid #fff;
+  background-color:rgba(255,255,255,0);
+  outline:none;
+  
+  padding:15px;
+  color:#020000;
+  font-size: 20px !important;
+  cursor:pointer;
+  font-family: 'Open Sans', sans-serif;
+  border-radius:5px
+}
 .nav-logo {
   margin-top: 0.2%;
   width: 34%;
@@ -260,14 +277,16 @@ a {
 }
 
 .nav-link {
+font-size: 16px;
+   font-weight: 700;
   transition: 0.3s ease-out;
-  color: #c2c0c0;
-}
+  background: #ffff text;
 
-.nav-link:hover {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(213, 173, 109)), to(rgb(145, 112, 59))) text;
+   font-family: 'Open Sans', sans-serif;
   -webkit-text-fill-color: transparent;
 }
+
+
 
 .hamburger {
   display: none;
@@ -282,16 +301,16 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 
 }
 
 .link:hover {
-  color: rgb(126, 126, 126);
+  color: rgb(0, 0, 0);
 }
 
 .dropdown.active>.link {
-  color: #c2c0c0;
+  color: #000000;
 }
 
 .dropdown {
@@ -309,7 +328,7 @@ a {
   display: none;
   position: absolute;
   backdrop-filter: blur(15px);
-  background-color: rgba(0, 0, 0, 0.242);
+  background-color: rgba(0, 0, 0, 0.77);
   min-width: 220px;
   top: 0%;
   left: 50%;
@@ -318,15 +337,24 @@ a {
 }
 
 
-.h2test {
-  color: #4b4b4b;
-  font-size: 35px;
+
+.p {
+  font-size: 17px;
+  color: #c2c0c0;
   text-align: left;
 }
 
-.p {
+.pText {
+font-size: 15px;
   color: #c2c0c0;
   text-align: left;
+}
+.h2Text
+{
+  font-size: 20px !important;
+  color: #c2c0c0;
+  text-align: left;
+
 }
 
 img {
@@ -336,8 +364,10 @@ img {
 }
 
 .h2 {
+  font-size: 25px;
   color: #b6b6b6;
-  text-align: left;
+
+  text-align: center;
 }
 
 h3 {
@@ -400,14 +430,11 @@ h3 {
 
   .content-wrapper {
     min-height: 20vh;
-    opacity: 0.2;
-    transition: opacity 0.5s ease-out;
+    
+ 
   }
 
-  .content-wrapper.in-view {
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
-  }
+
 
   .content {
     padding: 5rem 2rem;
@@ -435,13 +462,17 @@ h3 {
   }
 }
 
-@media(max-width:900px) {
-
+@media(max-width:960px) {
   .shiny
-  { 
+  {
   
-    font-size: 1.5em;
-  
+
+    font-size: 1.5em !important;
+
+  }
+  h2
+  {
+    font-size: 1em !important;
   }
   
   .header h1 {
@@ -471,10 +502,11 @@ h3 {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #26262632;
+    background-color:#111111cd;
     width: 100%;
     text-align: center;
     transition: 0.3s;
+ 
     backdrop-filter: blur(15px) !important;
     z-index: 999;
   }
@@ -513,7 +545,7 @@ h3 {
   .box {
     width: 430px;
     position: absolute;
-    margin-top: 160px;
+    margin-top: 145px;
     margin-bottom: 0px;
     margin-left: 1%;
 
@@ -582,46 +614,48 @@ h3 {
 
 @media only screen and (max-width:600px) {
 
-  .shiny
-  { 
+
+  .h2Text
+  {
+   
+    font-size: 20px;
+    font-weight: 900 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from( rgba(213,173,109,1)), to( rgba(145,112,59,1)));
+    -webkit-text-fill-color: transparent;
+   
+    -webkit-background-clip: text;
   
-    font-size: 1px !important;
-  
   }
-  .nav-logo {
-    width: 45% !important;
+  .nav-logo
+  {
+width: 50%;
   }
+  .box {
 
-  .footer_logo {
 
-    margin-right: 3%;
-    margin-top: -5%;
-    width: 45% !important;
+    width:80%;
+margin-left: 10%;
   }
-
-  .header {
-    left: 7%;
+  h2
+  {
+    display: none !important;
     
   }
-
-  .header h1 {
-
-    font-size: 24px;
-
+  .inner-shiny
+  {
+    display: none !important;
   }
 
-  .header h2 {
+.shiny
+{
+  display: none !important;
+}
 
-    font-size: 14px;
-
-  }
-
-  .slide {
-    height: 600px;
-
-  }
-
-
+footer img
+{
+  width: 120px !important;
+  margin-bottom: 5% !important;
+}
 }
 
 @keyframes zoomIn {
@@ -784,8 +818,9 @@ h1, h2  {
 
   background: -webkit-gradient(linear, left top, left bottom, from( rgba(213,173,109,1)), to( rgba(145,112,59,1)));
   -webkit-text-fill-color: transparent;
-  display: inline-block;
+ 
   -webkit-background-clip: text;
+
 }
 
 .shiny
@@ -831,6 +866,7 @@ h1, h2  {
 
 .inner-shiny::after, .inner-shiny::before
 {
+
 		-webkit-animation: sparkle 5s infinite;
   -webkit-animation-timing-function: linear;
 	background: #FFF;
@@ -839,7 +875,7 @@ h1, h2  {
   content: "";
   display: block;
   height: 10px;
-  opacity: 0.1;
+
   position: absolute;
   width: 10px;
 }
@@ -866,11 +902,3 @@ h1, h2  {
   100% { background-position: 500px; }
 }
 
-@-webkit-keyframes sparkle
-{
-  0%   { opacity: 0; }
-  30%  { opacity: 0; }
-  40%  { opacity: 0.8; }
-  60%  { opacity: 0; }
-  100% { opacity: 0; }
-}
